@@ -1,0 +1,45 @@
+GET http://localhost:3000/books/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpbmF5MTk5NiIsImlhdCI6MTY5ODkzMTE2Nn0.IXDcUiMUE_tBro8vYSaCd-dci4G6Feaum37_fPCjelw
+
+###
+
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpbmF5MTk5NiIsImlhdCI6MTY5ODkzMTE2Nn0.IXDcUiMUE_tBro8vYSaCd-dci4G6Feaum37_fPCjelw
+###
+
+GET http://localhost:3000/books/1/
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+# {    
+#     "username": "rahul123",
+#     "password": "rahul@456",
+#     "gender":"male",
+#     "location":"hyderabad"
+# }
+
+{    
+    "username": "vinay1996",
+    "name" : "vinay",
+    "password": "vinay@1996",
+    "gender":"male",
+    "location":"karimnagar"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+# {    
+#     "username": "rahul123",
+#     "password": "rahul@456"
+# }
+
+{    
+    "username": "vinay1996",
+    "password": "vinay@1996"
+}
